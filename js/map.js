@@ -745,7 +745,7 @@ p.nominalBounds = new cjs.Rectangle(-56,-54.9,112.5,112.5);
 	this.timeline.addTween(cjs.Tween.get({}).to({state:[{t:this.instance_18},{t:this.instance_17},{t:this.instance_16},{t:this.instance_15},{t:this.instance_14},{t:this.instance_13},{t:this.instance_12},{t:this.instance_11},{t:this.instance_10},{t:this.instance_9},{t:this.instance_8},{t:this.instance_7},{t:this.instance_6},{t:this.instance_5},{t:this.instance_4},{t:this.instance_3},{t:this.instance_2},{t:this.instance_1},{t:this.instance}]}).wait(1));
 
 	this._renderFirstFrame();
-
+	
 }).prototype = p = new lib.AnMovieClip();
 p.nominalBounds = new cjs.Rectangle(304,300,292.6,231.70000000000005);
 // library properties:
@@ -762,7 +762,7 @@ lib.properties = {
 		{src:"../sounds/_10wav.mp3", id:"_10wav"},
 		{src:"../sounds/_12wav.mp3", id:"_12wav"},
 		{src:"../sounds/_14wav.mp3", id:"_14wav"},
-		{src:"../sounds/_15wav.mp3", id:"_15wav"},
+		{src:"https://github.com/DUF1LT/IndigoProject/blob/main/sounds/_15wav.mp3?raw=true", id:"_15wav"},
 		{src:"../sounds/_16wav.mp3", id:"_16wav"},
 		{src:"../sounds/_18wav.mp3", id:"_18wav"},
 		{src:"../sounds/_2wav.mp3", id:"_2wav"},
