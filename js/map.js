@@ -762,7 +762,7 @@ lib.properties = {
 		{src:"../sounds/_10wav.mp3", id:"_10wav"},
 		{src:"../sounds/_12wav.mp3", id:"_12wav"},
 		{src:"../sounds/_14wav.mp3", id:"_14wav"},
-		{src:"https://github.com/DUF1LT/IndigoProject/blob/main/sounds/_15wav.mp3?raw=true", id:"_15wav"},
+		{src:"https://raw.githubusercontent.com/DUF1LT/IndigoProject/main/sounds/_1wav.mp3", id:"_15wav"},
 		{src:"../sounds/_16wav.mp3", id:"_16wav"},
 		{src:"../sounds/_18wav.mp3", id:"_18wav"},
 		{src:"../sounds/_2wav.mp3", id:"_2wav"},
