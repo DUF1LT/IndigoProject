@@ -42,6 +42,32 @@ toStructureButton.addEventListener('click', e => {
     }
 })
 
+// Модальное окно
+
+let btnOpenModal = document.getElementById('btn-open-modal');
+let modal = document.getElementById('wrapper-modal');
+let overlay = document.getElementById('overlay');
+
+let btnOpenAnswer = document.querySelector(".question-button")
+let answerBlock = document.querySelector(".wrapper-answer");
+
+btnOpenModal.addEventListener('click', function() {
+    modal.classList.add('active');
+});
+
+btnOpenAnswer.addEventListener('click', function() {
+    console.log('gfr');
+    answerBlock.classList.add('active');
+});
+
+function closeModal(){
+    modal.classList.remove('active');
+    answerBlock.classList.remove('active');
+}
+
+overlay.addEventListener('click', closeModal);
+
+
 
 
 

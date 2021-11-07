@@ -712,3 +712,128 @@ video {
         margin-bottom: 0;
     }
 }
+
+/* БАЗА ЗНАНИЙ */
+
+
+#btn-open-modal {
+    width: 50px;
+    height: 50px;
+    background-color: #1F38BB;
+    color: #ffffff;
+    font-size: 22px;
+    font-weight: bold;
+    border-radius: 100%;
+    cursor: pointer;
+
+    position: fixed;
+    top: 680px;
+    left: 1420px;
+}
+
+#btn-open-modal:hover {
+    transform: scale(1.03);
+}
+
+#wrapper-modal {
+    width: 100%;
+    height: 100%;
+    display: none;
+}
+
+#wrapper-modal.active {
+    display: block;
+}
+
+#overlay {
+    position: fixed;
+    top: 0 ;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    z-index: 9999;
+    background-color: rgb(137, 136, 136);
+    opacity: 0.4;
+}
+
+#modal-window {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    z-index: 99999;
+    transform: translate(-50%,-50%);
+    width: 450px;
+    height: auto;
+    max-height: 600px;
+    opacity: 1;
+
+    padding: 50px 40px;
+    background-color: #ffffff;
+
+    font-family: Montserrat;
+    font-style: normal;    
+    line-height: 107.4%;
+}
+
+.modal-window-heading {
+    font-weight: bold;
+    font-size: 22px;
+    letter-spacing: 0.06em;
+    text-align: center;
+    margin-bottom: 5px;
+}
+
+.question {
+    width: 100%;
+    height: 30px;
+    margin-top: 20px;
+    border: none;
+    border-bottom: 3px solid #1F38BB;
+    font-family: Montserrat;
+    font-size: 15px;
+}
+
+.question:focus {
+	outline: none;
+	border-bottom: 3px solid #132476;	
+}
+
+.question-button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    color: white;
+    background: #1F38BB;
+    font-weight: 600;
+    font-size: 13px;
+    letter-spacing: 0.06em;
+    padding: 10px;
+    margin-top: 25px;
+    width: 125px;
+    cursor: pointer;
+    margin: 0 auto; 
+    margin-top: 30px;
+}
+
+.wrapper-answer {
+    margin-top: 40px;
+    display: none;
+}
+
+.wrapper-answer.active {
+    display: block;
+}
+
+.answer-heading {
+    font-weight: bold;
+    font-size: 18px;
+    margin-bottom: 15px;
+}
+
+.answer {
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 135%;
+    letter-spacing: 0.03em;
+}
