@@ -209,7 +209,3 @@ function getAnswer(question)
 
     return answer;
 }
-
-
-let msg = prompt("Введите вопрос", "Что такое Indigo?");
-alert(getAnswer(msg));
