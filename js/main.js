@@ -48,16 +48,20 @@ let btnOpenModal = document.getElementById('btn-open-modal');
 let modal = document.getElementById('wrapper-modal');
 let overlay = document.getElementById('overlay');
 
+let inputQuestion = document.querySelector(".question");
 let btnOpenAnswer = document.querySelector(".question-button")
 let answerBlock = document.querySelector(".wrapper-answer");
+let answer = document.querySelector(".answer");
+
 
 btnOpenModal.addEventListener('click', function() {
     modal.classList.add('active');
 });
 
 btnOpenAnswer.addEventListener('click', function() {
-    console.log('gfr');
     answerBlock.classList.add('active');
+    answer.innerHTML = getAnswer(inputQuestion.value);
+    inputQuestion.value = "";
 });
 
 function closeModal(){

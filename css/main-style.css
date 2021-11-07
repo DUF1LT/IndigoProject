@@ -727,8 +727,9 @@ video {
     cursor: pointer;
 
     position: fixed;
-    top: 680px;
-    left: 1420px;
+    top: 90%;
+    right: 3%;
+    z-index: 100000;
 }
 
 #btn-open-modal:hover {
