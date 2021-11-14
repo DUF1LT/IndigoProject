@@ -54,6 +54,18 @@ let answerBlock = document.querySelector(".wrapper-answer");
 let answer = document.querySelector(".answer");
 
 
+inputQuestion.addEventListener('click', function(){
+    inputQuestion.value = "";
+});
+
+inputQuestion.addEventListener('keypress', function(e){
+    if(e.key == 'Enter')
+    {
+        answerBlock.classList.add('active');
+        answer.innerHTML = getAnswer(inputQuestion.value);
+    }
+});
+
 btnOpenModal.addEventListener('click', function() {
     modal.classList.add('active');
 });
@@ -61,7 +73,6 @@ btnOpenModal.addEventListener('click', function() {
 btnOpenAnswer.addEventListener('click', function() {
     answerBlock.classList.add('active');
     answer.innerHTML = getAnswer(inputQuestion.value);
-    inputQuestion.value = "";
 });
 
 function closeModal(){
