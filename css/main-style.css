@@ -409,12 +409,13 @@ h5::after {
     transform: scale(1.05);
 }
 
-/* --- Sumilator Sectiin --- */
+/* --- Sumilator Section --- */
 
-.specifyPath{
-    align-self: center;
-    font-weight: bold;
-    font-size: 15px;
+iframe{
+    margin: 0 auto;
+    align-content: center;
+    align-items: center;
+    display: block;
 }
 
 /* --- RESPONSIVE --- */
@@ -432,6 +433,10 @@ h5::after {
         width: 50%;
     }
     
+    iframe{
+       width: 1000px;
+       height: 700px;
+    }
 }
 
 @media screen and (max-width: 1060px) {
@@ -464,6 +469,11 @@ h5::after {
         width: 55%;
     }    
 
+    iframe{
+        width: 800px;
+        height: 600px;
+     }
+
 } 
 
  @media screen and (max-width: 910px) {
@@ -483,6 +493,11 @@ h5::after {
         width: 63%;
     }
 
+    iframe{
+        width: 700px;
+        height: 500px;
+     }
+
 }
 
 @media screen and (max-width: 750px) {
@@ -501,7 +516,11 @@ h5::after {
     .second-section-text {
         width: 55%;
     }
+    iframe{
 
+        width: 500px;
+        height: 400px;
+     }
 }
 
 @media screen and (max-width: 645px) {
@@ -552,6 +571,11 @@ h5::after {
     .fifth-section-text p{
         width: 100%;
     }
+
+    iframe{
+        width: 500px;
+        height: 400px;
+     }
 } 
 
 @media screen and (max-width: 535px) {
