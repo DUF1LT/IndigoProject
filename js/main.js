@@ -67,7 +67,8 @@ inputQuestion.addEventListener('keypress', function(e){
     {
         answerBlock.classList.add('active');
         const answerText = getAnswer(inputQuestion.value);
-        const audio = `<audio controls='true' autoplay='true' style='display: block; margin: 5px auto' src='http://tts.voicetech.yandex.net/generate?format=wav&lang=ru-RU&key=4a4d3a13-d206-45fc-b8fb-e5a562c9f587&text=\"${answerText.split("<br>")[0]}\"'></audio>`;
+        const audio = `<audio controls='true' autoplay='true' style='display: 
+        block; margin: 5px auto' src='http://tts.voicetech.yandex.net/generate?format=wav&lang=ru-RU&key=4a4d3a13-d206-45fc-b8fb-e5a562c9f587&text=\"${answerText.split("<br>")[0]}\"'></audio>`;
         answer.innerHTML = answerText + "<br>" + audio;
     }
 });
@@ -78,7 +79,10 @@ btnOpenModal.addEventListener('click', function() {
 
 btnOpenAnswer.addEventListener('click', function() {
     answerBlock.classList.add('active');
-    answer.innerHTML = getAnswer(inputQuestion.value);
+    const answerText = getAnswer(inputQuestion.value);
+    const audio = `<audio controls='true' autoplay='true' style='display: 
+    block; margin: 5px auto' src='http://tts.voicetech.yandex.net/generate?format=wav&lang=ru-RU&key=4a4d3a13-d206-45fc-b8fb-e5a562c9f587&text=\"${answerText.split("<br>")[0]}\"'></audio>`;
+    answer.innerHTML = answerText + "<br>" + audio;
 });
 
 function closeModal(){
