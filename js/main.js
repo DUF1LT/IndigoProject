@@ -62,14 +62,20 @@ inputQuestion.addEventListener('click', function(){
     inputQuestion.value = "";
 });
 
+const voices = window.speechSynthesis.getVoices();
+const rusVoice = voices[1];
+
 inputQuestion.addEventListener('keypress', function(e){
     if(e.key == 'Enter')
     {
         answerBlock.classList.add('active');
         const answerText = getAnswer(inputQuestion.value);
-        const audio = `<audio controls='true' autoplay='true' style='display: 
-        block; margin: 5px auto' src='http://tts.voicetech.yandex.net/generate?format=wav&lang=ru-RU&key=4a4d3a13-d206-45fc-b8fb-e5a562c9f587&text=\"${answerText.split("<br>")[0]}\"'></audio>`;
-        answer.innerHTML = answerText + "<br>" + audio;
+        let msg = new SpeechSynthesisUtterance();
+        msg.lang = "ru-RU";
+        msg.voice = rusVoice;
+        msg.text = answerText;
+        window.speechSynthesis.speak(msg);
+        answer.innerHTML = answerText;
     }
 });
 
@@ -80,9 +86,12 @@ btnOpenModal.addEventListener('click', function() {
 btnOpenAnswer.addEventListener('click', function() {
     answerBlock.classList.add('active');
     const answerText = getAnswer(inputQuestion.value);
-    const audio = `<audio controls='true' autoplay='true' style='display: 
-    block; margin: 5px auto' src='http://tts.voicetech.yandex.net/generate?format=wav&lang=ru-RU&key=4a4d3a13-d206-45fc-b8fb-e5a562c9f587&text=\"${answerText.split("<br>")[0]}\"'></audio>`;
-    answer.innerHTML = answerText + "<br>" + audio;
+    let msg = new SpeechSynthesisUtterance();
+    msg.lang = "ru-RU";
+    msg.voice = rusVoice;
+    msg.text = answerText;
+    window.speechSynthesis.speak(msg);
+    answer.innerHTML = answerText;
 });
 
 function closeModal(){

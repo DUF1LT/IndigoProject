@@ -861,7 +861,7 @@ video {
     font-size: 14px;
     line-height: 135%;
     letter-spacing: 0.03em;
-    height: 400px;
+    height: auto;
     overflow-y: auto;
 }
 
